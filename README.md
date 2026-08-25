@@ -102,8 +102,75 @@ The CI pipeline performs:
 This helps identify formatting or configuration problems before infrastructure changes are deployed.
 
 ## Deployment
+### Prerequisites
 
-Initialize Terraform:
+Before deploying, ensure you have:
+
+- An AWS account
+- AWS CLI installed and configured
+- Terraform installed
+- Git installed
+- Appropriate AWS IAM permissions
+### Initialize Terraform
 
 ```bash
 terraform init
+```
+
+### Format Terraform Code
+
+```bash
+terraform fmt
+```
+
+### Validate Terraform Configuration
+
+```bash
+terraform validate
+```
+
+### Preview Infrastructure Changes
+
+```bash
+terraform plan
+```
+
+### Deploy Infrastructure
+
+```bash
+terraform apply
+```
+
+### View Terraform Outputs
+
+```bash
+terraform output
+```
+
+### Destroy Infrastructure
+
+When finished, destroy the AWS resources to avoid unnecessary charges:
+
+```bash
+terraform destroy
+```
+
+## Project Highlights
+
+- Automated AWS infrastructure provisioning using Terraform
+- Implemented Infrastructure as Code (IaC) best practices
+- Configured VPC networking, public subnet, route table, and Internet Gateway
+- Deployed an Amazon Linux EC2 instance with Apache web server
+- Configured Security Groups for HTTP access
+- Implemented CI validation using GitHub Actions
+- Documented architecture and deployment procedures
+
+## Skills Demonstrated
+
+AWS | Terraform | Infrastructure as Code (IaC) | EC2 | VPC | Networking | Security Groups | Git | GitHub | GitHub Actions | CI/CD | Linux | Apache
+
+## Author
+
+**Sindhuja Ummadisetti**
+
+Cloud & DevOps Engineer | AWS | Terraform | Kubernetes | CI/CD
