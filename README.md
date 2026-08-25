@@ -21,6 +21,13 @@ The infrastructure includes:
 
 ## Architecture
 
+![AWS Terraform Architecture](AWS-Terraform-Architecture.png)
+
+Internet
+   |
+Internet Gateway
+...
+
 Internet
    |
 Internet Gateway
